@@ -51,7 +51,7 @@ function processFile(fileName, fileData) {
     if(typeof fileData !== "string") {
       throw new TypeError("Filedata must be string ");
     }
-    if(fileData.trim() === "") {
+    if(fileData === "") {
       throw new TypeError("Filedata cannot be empty");
     }
     
